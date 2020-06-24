@@ -182,6 +182,7 @@ i {
 .ul--menu--dropDown--visible {
   display: block;
   position: absolute;
+  z-index: 100;
   right: 50px;
   clip-path: polygon(
     64% 0,

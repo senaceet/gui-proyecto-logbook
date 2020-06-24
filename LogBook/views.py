@@ -10,6 +10,7 @@ def index(request):
     })
 
 def login_form_view(request):
+    """
     if request.method == 'POST':
         username  = request.POST.get('user')
         password = request.POST.get('password')
@@ -22,13 +23,13 @@ def login_form_view(request):
             return redirect('dashboard')
         else:
             messages.error(request,'Ups! Algo salió mal')
-            
+    """     
     return render(request, 'loggin.html')
 
 def dashboard_view(request):
     return render(request, 'homeDashboard.html',{
         'nombre': 'Juan',
-        'apellido': 'Pepino'
+        'apellido': 'Perez'
     })
 
 
@@ -64,3 +65,6 @@ def configPerfil(request):
 
 def enviarOpinion(request):
     return render(request,'FormOpiniones.html')
+
+def resultados(request):
+    return render(request,'resultadosBuscarUsuarios.html')
