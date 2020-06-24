@@ -79,4 +79,4 @@ def resultados(request):
     return render(request,'resultadosBuscarUsuarios.html',{
         'nombre': 'Juan',
         'apellido': 'Perez'
-    })
+    })  
