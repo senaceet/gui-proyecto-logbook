@@ -58,13 +58,25 @@ def restoreAccount(request):
     return render(request, 'recuperarCuenta.html')
 
 def crearUsuario(request):
-    return render(request,'crearUsuario.html')
+    return render(request,'crearUsuario.html',{
+        'nombre': 'Juan',
+        'apellido': 'Perez'
+    })
 
 def configPerfil(request):
-    return render(request,'configPerfil.html')
+    return render(request,'configPerfil.html',{
+        'nombre': 'Juan',
+        'apellido': 'Perez'
+    })
 
 def enviarOpinion(request):
-    return render(request,'FormOpiniones.html')
+    return render(request,'FormOpiniones.html',{
+        'nombre': 'Juan',
+        'apellido': 'Perez'
+    })
 
 def resultados(request):
-    return render(request,'resultadosBuscarUsuarios.html')
+    return render(request,'resultadosBuscarUsuarios.html',{
+        'nombre': 'Juan',
+        'apellido': 'Perez'
+    })

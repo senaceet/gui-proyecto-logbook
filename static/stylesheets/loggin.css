@@ -158,6 +158,11 @@ body{
     color:white;
 }
 .sub1{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
     cursor: pointer; 
     border: 1px solid #685FDE;
     background: #685FDE;
