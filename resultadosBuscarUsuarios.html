@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,8 +9,8 @@
     <link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet' />
     <script src="https://kit.fontawesome.com/effae3290d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="fonts/fonts.css" />
-    <link rel="stylesheet" href="stylesheets/normalize.css"/>
-    <link rel="stylesheet" href="stylesheets/styles.css"/>
+    <link rel="stylesheet" href="stylesheets/normalize.css" />
+    <link rel="stylesheet" href="stylesheets/styles.css" />
     <title>Logbook | ¡Bienvenido!</title>
 </head>
 
@@ -30,8 +31,13 @@
                     </p>
 
                     <ul id="ul--menu--dropDown--hidden" class="ul--menu--dropDown--hidden">
-                        <li class="li--item--DropDown"><a class="a--item--DropDown a--item--1" href="FormOpiniones.html"><i class='i--DropDown bx bx-message-rounded-check'></i>Enviar opinión</a></li>
-                        <li class="li--item--DropDown"><a class="a--item--DropDown a--item--2" href="resultadosBuscarUsuarios.html"> <i class='i--DropDown i--DropDownCloseSesion bx bx-log-out-circle'></i>Cerrar sesión</a></li>
+                        <li class="li--item--DropDown"><a class="a--item--DropDown a--item--1"
+                                href="FormOpiniones.html"><i class='i--DropDown bx bx-message-rounded-check'></i>Enviar
+                                opinión</a></li>
+                        <li class="li--item--DropDown"><a class="a--item--DropDown a--item--2"
+                                href="resultadosBuscarUsuarios.html"> <i
+                                    class='i--DropDown i--DropDownCloseSesion bx bx-log-out-circle'></i>Cerrar
+                                sesión</a></li>
                     </ul>
                 </li>
 
@@ -50,10 +56,18 @@
 
         <!--Menú vertical-->
         <ul class="ul--menu2--close" id="ul--menu2--close">
-            <li class="li--item"><a href="./dashboard.html" class="a--item"><i class='i--dashBoardIcon bx bxs-home bx-md'></i><span class="span--dashBoard--hidden">Home</span></a></li>
-            <li class="li--item"><a href="./configPerfil.html" class="a--item"><i class='i--dashBoardIcon bx bx-id-card bx-md'></i><span class="span--dashBoard--hidden">Configuración</span></a></li>
-            <li class="li--item"><a href="./resultadosBuscarUsuarios.html" class="a--item"><i class='i--dashBoardIcon bx bx-group bx-md'></i><span class="span--dashBoard--hidden">Personas</span></a></li>
-            <li id="liFilter" class="li--item li--item2"><p class="p--filter"><i class='i--dashBoardIcon bx bx-filter-alt bx-md'></i><span class="span--dashBoard--hidden">Filtrar</span></p>
+            <li class="li--item"><a href="./dashboard.html" class="a--item"><i
+                        class='i--dashBoardIcon bx bxs-home bx-md'></i><span
+                        class="span--dashBoard--hidden">Home</span></a></li>
+            <li class="li--item"><a href="./configPerfil.html" class="a--item"><i
+                        class='i--dashBoardIcon bx bx-id-card bx-md'></i><span
+                        class="span--dashBoard--hidden">Configuración</span></a></li>
+            <li class="li--item"><a href="./resultadosBuscarUsuarios.html" class="a--item"><i
+                        class='i--dashBoardIcon bx bx-group bx-md'></i><span
+                        class="span--dashBoard--hidden">Personas</span></a></li>
+            <li id="liFilter" class="li--item li--item2">
+                <p class="p--filter"><i class='i--dashBoardIcon bx bx-filter-alt bx-md'></i><span
+                        class="span--dashBoard--hidden">Filtrar</span></p>
                 <ul id="ulSumMenuFiltro" class="ul--subMenu--hidden">
                     <li class="li--subItem">
                         <p class="p--indicadorFilter">Documento <span>| Número</span> </p>
@@ -89,16 +103,44 @@
                 </ul>
                 <!--ul--subMenú-->
             </li>
-            <li class="li--item"><a href="crearUsuario.html" class="a--item"><i class='i--dashBoardIcon bx bxs-user-plus bx-md'></i><span class="span--dashBoard--hidden">Agregar personas</span></a></li>
-            <li class="li--item"><a href="" class="a--item"><i class='i--dashBoardIcon bx bxs-message-rounded-x bx-md'></i><span class="span--dashBoard--hidden">Reporte error</span></a></li>
-            <li class="li--item"><a href="" class="a--item"><i class='i--dashBoardIcon bx bx-message-alt-error bx-md'></i><span class="span--dashBoard--hidden">Reporte de opiniónes</span></a></li>
+            <li class="li--item"><a href="crearUsuario.html" class="a--item"><i
+                        class='i--dashBoardIcon bx bxs-user-plus bx-md'></i><span
+                        class="span--dashBoard--hidden">Agregar personas</span></a></li>
+            <li class="li--item"><a href="" class="a--item"><i
+                        class='i--dashBoardIcon bx bxs-message-rounded-x bx-md'></i><span
+                        class="span--dashBoard--hidden">Reporte error</span></a></li>
+            <li class="li--item"><a href="" class="a--item"><i
+                        class='i--dashBoardIcon bx bx-message-alt-error bx-md'></i><span
+                        class="span--dashBoard--hidden">Reporte de opiniónes</span></a></li>
         </ul>
         <!--ul--Menú 2-->
     </header>
-    <main class="main--container">
+    <main class="main--container-dave">
         <section class="section--container--close" id="section--container">
             <!--Aquí sus partes de agregar usuario y demás, comentario a petición de Daniel-->
             <p class="p--textResult">Resultados de tu busqueda:</p>
+            <div class="buttons-container">
+                <div class="container-flex-buttoms">
+                    <div class="three-icons">
+                        <button class="item-button-add">
+                            <i class="far fa-plus-square"><span>Agregar nuevo usuario</span></i>
+                        </button>
+                        <button class="item-button-select">
+                            Seleccionar todo
+                        </button>
+                        <button class="item-button-delete">
+                            Eliminar elección
+                        </button>
+                    </div>
+                    <div class="content-results">
+                        <p>resultados por PG/ </p>
+                        <button>
+                            %
+                        </button>
+                    </div>
+                </div>
+
+            </div>
             <div class="div--item">
                 <section class="div--section--item--1">
                     <img class="div--item--image" src="https://i.ibb.co/5FMhYSh/1.jpg" alt="1" border="0">
@@ -141,185 +183,7 @@
                 <div class="div--item--rol">
                     <button>Administrador</button>
                 </div>
-            ​
             </div>
-            ​<div class="div--item">
-                <section class="div--section--item--1">
-                    <img class="div--item--image" src="https://i.ibb.co/5FMhYSh/1.jpg" alt="1" border="0">
-                    <div class="div--item--name">
-                        <p> Samuel Alejandro Galindo perez</p>
-                    </div>
-                    <div class="div--item--states">
-                        <p>Estado</p>
-                        <button>activo</button>
-                    </div>
-                    <div class="div--item--icons">
-                        <a href="#">
-                            <i class="fas fa-pencil-alt"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-trash-alt"></i>
-                        </a>
-                    </div>
-                </section>
-                <section class="div--section--item--2">
-                    <div class="div--item--program">
-                        <p>Programa:</p>
-                        <p>Técnico en programación de software</p>
-                    </div>
-                    <div class="div--item--age">
-                        <p>Edad:</p>
-                        <p>28</p>
-                    </div>
-                </section>
-                <section class="div--section--item--3">
-                    <div class="div--item--email">
-                        <p>Correo:</p>
-                        <p>Clay32@misena.edu.co</p>
-                    </div>
-                    <div class="div--item--location">
-                        <p>Sede:</p>
-                        <p>Colombia</p>
-                    </div>
-                </section>
-                <div class="div--item--rol">
-                    <button>Administrador</button>
-                </div>
-            ​
-            </div>
-            ​<div class="div--item">
-                <section class="div--section--item--1">
-                    <img class="div--item--image" src="https://i.ibb.co/5FMhYSh/1.jpg" alt="1" border="0">
-                    <div class="div--item--name">
-                        <p> Samuel Alejandro Galindo perez</p>
-                    </div>
-                    <div class="div--item--states">
-                        <p>Estado</p>
-                        <button>activo</button>
-                    </div>
-                    <div class="div--item--icons">
-                        <a href="#">
-                            <i class="fas fa-pencil-alt"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-trash-alt"></i>
-                        </a>
-                    </div>
-                </section>
-                <section class="div--section--item--2">
-                    <div class="div--item--program">
-                        <p>Programa:</p>
-                        <p>Técnico en programación de software</p>
-                    </div>
-                    <div class="div--item--age">
-                        <p>Edad:</p>
-                        <p>28</p>
-                    </div>
-                </section>
-                <section class="div--section--item--3">
-                    <div class="div--item--email">
-                        <p>Correo:</p>
-                        <p>Clay32@misena.edu.co</p>
-                    </div>
-                    <div class="div--item--location">
-                        <p>Sede:</p>
-                        <p>Colombia</p>
-                    </div>
-                </section>
-                <div class="div--item--rol">
-                    <button>Administrador</button>
-                </div>
-            ​
-            </div>
-            ​<div class="div--item">
-                <section class="div--section--item--1">
-                    <img class="div--item--image" src="https://i.ibb.co/5FMhYSh/1.jpg" alt="1" border="0">
-                    <div class="div--item--name">
-                        <p> Samuel Alejandro Galindo perez</p>
-                    </div>
-                    <div class="div--item--states">
-                        <p>Estado</p>
-                        <button>activo</button>
-                    </div>
-                    <div class="div--item--icons">
-                        <a href="#">
-                            <i class="fas fa-pencil-alt"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-trash-alt"></i>
-                        </a>
-                    </div>
-                </section>
-                <section class="div--section--item--2">
-                    <div class="div--item--program">
-                        <p>Programa:</p>
-                        <p>Técnico en programación de software</p>
-                    </div>
-                    <div class="div--item--age">
-                        <p>Edad:</p>
-                        <p>28</p>
-                    </div>
-                </section>
-                <section class="div--section--item--3">
-                    <div class="div--item--email">
-                        <p>Correo:</p>
-                        <p>Clay32@misena.edu.co</p>
-                    </div>
-                    <div class="div--item--location">
-                        <p>Sede:</p>
-                        <p>Colombia</p>
-                    </div>
-                </section>
-                <div class="div--item--rol">
-                    <button>Administrador</button>
-                </div>
-            ​
-            </div>
-            ​<div class="div--item">
-                <section class="div--section--item--1">
-                    <img class="div--item--image" src="https://i.ibb.co/5FMhYSh/1.jpg" alt="1" border="0">
-                    <div class="div--item--name">
-                        <p> Samuel Alejandro Galindo perez</p>
-                    </div>
-                    <div class="div--item--states">
-                        <p>Estado</p>
-                        <button>activo</button>
-                    </div>
-                    <div class="div--item--icons">
-                        <a href="#">
-                            <i class="fas fa-pencil-alt"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-trash-alt"></i>
-                        </a>
-                    </div>
-                </section>
-                <section class="div--section--item--2">
-                    <div class="div--item--program">
-                        <p>Programa:</p>
-                        <p>Técnico en programación de software</p>
-                    </div>
-                    <div class="div--item--age">
-                        <p>Edad:</p>
-                        <p>28</p>
-                    </div>
-                </section>
-                <section class="div--section--item--3">
-                    <div class="div--item--email">
-                        <p>Correo:</p>
-                        <p>Clay32@misena.edu.co</p>
-                    </div>
-                    <div class="div--item--location">
-                        <p>Sede:</p>
-                        <p>Colombia</p>
-                    </div>
-                </section>
-                <div class="div--item--rol">
-                    <button>Administrador</button>
-                </div>
-            ​
-            </div>
-            ​
             <div class="div--item">
                 <section class="div--section--item--1">
                     <img class="div--item--image" src="https://i.ibb.co/5FMhYSh/1.jpg" alt="1" border="0">
@@ -378,31 +242,32 @@
             </section>
         </section>
     </main>
-    
+
     <footer class="footer--contenedor__principal">
-      <section class="footer--contenedor-logbook">
-         <a class="a--footer--titulo" href="#">LOGBOOK</a>
-      </section>
-      <section class="footer--contenedor__iconos">
-        <div class="footer-iconos">
-          <a href="#"><span class="icon-facebook-with-circle"></span></a>
-          <a href="#"><span class="icon-github-with-circle"></span></a>
-          <a href="#"><span class="icon-instagram-with-circle"></span></a>
-          <a href="#"><span class="icon-twitter-with-circle"></span></a>
-        </div>
-      </section>
-      <section class="footer--contenedor__contactenos">
-        <div class="footer--contactenos__titulo">
-          <h2 class="h2--titulo">Contáctenos</h2>
-        </div>
-        <div class="footer-contactenos">
-          <a href="#"><span class="icon-slideshare"> Llámenos al 3144319820</span></a>
-          <a href="#"><span class="icon-mobile"> www.logbook.com</span></a>
-          <a href="#"><span class="icon-laptop"> Acerca de Logbook</span></a>
-        </div>
-      </section>
+        <section class="footer--contenedor-logbook">
+            <a class="a--footer--titulo" href="#">LOGBOOK</a>
+        </section>
+        <section class="footer--contenedor__iconos">
+            <div class="footer-iconos">
+                <a href="#"><span class="icon-facebook-with-circle"></span></a>
+                <a href="#"><span class="icon-github-with-circle"></span></a>
+                <a href="#"><span class="icon-instagram-with-circle"></span></a>
+                <a href="#"><span class="icon-twitter-with-circle"></span></a>
+            </div>
+        </section>
+        <section class="footer--contenedor__contactenos">
+            <div class="footer--contactenos__titulo">
+                <h2 class="h2--titulo">Contáctenos</h2>
+            </div>
+            <div class="footer-contactenos">
+                <a href="#"><span class="icon-slideshare"> Llámenos al 3144319820</span></a>
+                <a href="#"><span class="icon-mobile"> www.logbook.com</span></a>
+                <a href="#"><span class="icon-laptop"> Acerca de Logbook</span></a>
+            </div>
+        </section>
     </footer>
     <script src="javascripts/scriptMenu.js"></script>
     <script src="javascripts/consejos.js"></script>
-  </body>
+</body>
+
 </html>
