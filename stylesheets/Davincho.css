@@ -395,6 +395,19 @@ i {
   text-align: center;
 }
 /*Zona que imprime resultados------------------------*/
+.section--container--close-dx {
+  padding: 10px;
+  margin-left: 5%;
+  background-color: #F2F2F2;
+  height: 100vh;
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 2em  100px 400px 50px;
+  /* align-items: center; */
+  column-gap: 2em;
+  row-gap: 1em;
+}
 .section--container--close {
   padding: 10px;
   margin-left: 5%;
@@ -408,6 +421,247 @@ i {
   column-gap: 1.5em;
   row-gap: 1em;
 }
+.grid-item1{
+  grid-row: 2/2;
+  grid-column:1/2;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content:center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.grid-item1 p{
+  /* background: skyblue; */
+  width: 100%;
+  text-align: center;
+}
+.fa-language{
+  font-size: 70px;
+  width: 50%;
+  height: 60%;
+  color: #5242E9;
+  display: flex;
+  justify-content: center;
+}
+.grid-item2{
+  grid-row: 3/3;
+  grid-column:1/4;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+}
+.item-header{
+  width: 100%;
+  border: none;
+  border-bottom: #c5c5c5 2px solid;
+  height: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.fa-user{
+  width: 10%;
+  height: 90%;
+  /* background: silver; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #685FDE;
+}
+.item-header h2{
+  width: 87%;
+  font-size: 1.2em;
+}
+.container-circle-program{
+  width: 100%;
+  height: 80%;
+  /* background: #69e4a6; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.fa-circle-notch{
+  width: 40%;
+  height: 80%;
+  /* background: rgb(170, 255, 0); */
+  font-size: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #685FDE;
+}
+.container-programs{
+  width: 40%;
+  height: 80%;
+  /* background: rgb(0, 183, 255); */
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+  overflow-y: auto;
+ 
+
+}
+.item-program{
+  /* background: #37E1FF; */
+  width: 90%;
+  height: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fa-plane{
+  width: 40%;
+  height: 100%;
+  background-color: #685FDE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  color: white;
+}
+.item-tecnicos{
+  width: 60%;
+  background: #5242E9;
+  color: white;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.item-tecnicos h3{
+  width: 95%;
+  font-size: .8em;
+  height: 30%;
+  /* background: seagreen; */
+}
+.item-tecnicos p{
+  width: 85%;
+  font-size: 1.5em;
+  height: 30%;
+  color: white;
+  font-weight: bold;
+  /* background: salmon; */
+}
+.grid-item3{
+  grid-row: 2/2;
+  grid-column:2/4;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.grid-text-item{
+  width: 55%;
+  /* background: #37E1FF; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.grid-text-item h2{
+  width: 100%;
+  font-size: 1em;
+  color: #43425D;
+  text-align: center;
+}
+.grid-text-item p{
+  width: 100%;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.fa-user-circle{
+  width: 35%;
+  /* background: #6d6d6d; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  color: #685FDE;
+}
+.grid-item4{
+  grid-row: 2/4;
+  grid-column:4/6;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-evenly;
+  /* align-content: cente; */
+  flex-wrap: wrap;
+}
+.item-header4{
+  width: 100%;
+  border: none;
+  border-bottom: #c5c5c5 2px solid;
+  height: 12%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.item-header4 > .fa-user{
+  width: 10%;
+  height: 90%;
+  /* background: silver; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: #685FDE;
+}
+.item-header4 h2{
+  width: 80%;
+  font-size: 1.2em;
+  /* background: salmon; */
+}
+.container-userxd{
+  width: 90%;
+  height: 86%;
+  /* background: sandybrown; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: auto;
+  align-content: flex-start;
+
+}
+.user-content{
+  margin-top: 7%;
+  display: flex;
+  /* background: skyblue; */
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  width: 95%;
+}
+.user-content > .fa-user-circle{
+  /* background: slateblue; */
+  width: 15%;
+  font-size: 50px;
+}
+.item-user-date{
+  width: 60%;
+  /* background: rgb(54, 97, 141); */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.item-user-date p{
+  width: 100%;
+  height: 42%;
+  /* background: snow; */
+}
+.item-day{
+  width: 15%;
+  /* background: springgreen; */
+  text-align: start;
+
+}
 
 .section--bienvenidaUsuario,
 .configuracionUsuario,
@@ -415,7 +669,7 @@ i {
 
 {
   grid-row: 1 / 5;
-  grid-column: 1 / 3;
+  grid-column: 1 / 6;
 }
 
 .configuracionUsuario {  background: #f2f2f2;}
@@ -429,17 +683,25 @@ i {
 }
 /* Parte de Dave-------------------------------------------------- */
 
-.p--textResult {
+.container-welcome {
   font-size: 1.8em ;
   color: #43425d;
   grid-row: 1 / 2;
-  grid-column: 1 / 3;
-  
+  grid-column: 1 / 6;
+  font-size: 1em;
+  font-weight: bold;
+  background: #FFFFFF4F;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.container-welcome p{
+  padding: 3em;
 }
 .buttons-container{
   color: #0700db;
   grid-row: 2 / 3;
-  grid-column: 1 / 3;
+  grid-column: 1 / 6;
   background: white;
   /* justify-self: flex-end; */
 }
@@ -742,7 +1004,7 @@ i {
 }
 /*Pagination*-dave----------------*/
 .section--pagination {
-  grid-column: 1 / 3;
+  grid-column: 1 / 6;
   grid-row: 6 / 6;
   
  
@@ -1473,6 +1735,8 @@ i {
 
 /*------------------------------------------------------------- FOOTER ---------------------------------------------------------*/
 .footer--contenedor__principal {
+  
+ 
   width: 100%;
   background-color: #04151f;
   display: flex;
