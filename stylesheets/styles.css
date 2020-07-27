@@ -404,7 +404,7 @@ i {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 2em  3em repeat(2, 150px) 50px;
-  /* align-items: center; */
+  align-items: center;
   column-gap: 1.5em;
   row-gap: 1em;
 }
@@ -413,7 +413,7 @@ i {
 .configuracionUsuario,
 .sectionFormOpiniones
 
- {
+{
   grid-row: 1 / 5;
   grid-column: 1 / 3;
 }
