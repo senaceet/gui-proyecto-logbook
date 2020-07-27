@@ -1,203 +1,247 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="https://i.ibb.co/kmctXQm/libro.png" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet' />
-  <link rel="stylesheet" href="fonts/fonts.css" />
-  <link rel="stylesheet" href="stylesheets/normalize.css" />
-  <link rel="stylesheet" href="stylesheets/styles.css" />
-  <title>Logbook | ¡Bienvenido!</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://i.ibb.co/kmctXQm/libro.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="stylesheets/normalize.css" />
+    <link rel="stylesheet" href="stylesheets/styles.css" />
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <title>Logbook | ¡Bienvenido!</title>
 </head>
 
 <body>
-  <header class="header--container" id="a">
-    <nav class="nav--container">
-      <div class="div--logo--close" id="div--logo">
-        <div id="divHamburger" href="#" class="div--menu-btn"></div>
-        <p class="p--logo--close" id="p--logo">LOGBOOK</p>
-      </div>
-      <ul class="ul--menu--close" id="ul--menu--1">
-
-        <li class="li--item--userImage"><img class="img--userImage" src="https://i.ibb.co/5FMhYSh/1.jpg"
-            alt="User image" /> </li>
-        <li class="li--item--userName" id="li--item--userName">
-          <p class="p--userName">
-          <div id="div--row--up" class="div--row--up"></div>
-          </p>
-
-          <ul id="ul--menu--dropDown--hidden" class="ul--menu--dropDown--hidden">
-            <li class="li--item--DropDown"><a class="a--item--DropDown a--item--1" href="FormOpiniones.html"><i
-                  class='i--DropDown bx bx-message-rounded-check'></i>Enviar opinión</a></li>
-            <li class="li--item--DropDown"><a class="a--item--DropDown a--item--2" href="index.html"> <i
-                  class='i--DropDown i--DropDownCloseSesion bx bx-log-out-circle'></i>Cerrar sesión</a></li>
-          </ul>
-        </li>
-
-        <li class="li--item--config li--itemSvg">
-          <a class="a--svg a--svgConfig" href=""><i class='bx bxs-wrench'></i></a>
-        </li>
-        <li class="li--item--help li--itemSvg">
-          <a class="a--svg a--svgHelp" href=""><i class='bx bxs-buoy'></i></a>
-        </li>
-        <li class="li--item--search li--itemSvg">
-          <i class='i--search bx bx-search bx-mb'></i>
-          <input class="input--seach " type="search" name="" id="">
-        </li>
-      </ul>
-    </nav>
-
-    <!--Menú vertical-->
-    <ul class="ul--menu2--close" id="ul--menu2--close">
-      <li class="li--item"><a href="dashboard.html" class="a--item"><i
-            class='i--dashBoardIcon bx bxs-home bx-md'></i><span class="span--dashBoard--hidden">Home</span></a></li>
-      <li class="li--item"><a href="configPerfil.html" class="a--item"><i
-            class='i--dashBoardIcon bx bx-id-card bx-md'></i><span
-            class="span--dashBoard--hidden">Configuración</span></a></li>
-      <li class="li--item"><a href="./resultadosBuscarUsuarios.html" class="a--item"><i
-            class='i--dashBoardIcon bx bx-group bx-md'></i><span class="span--dashBoard--hidden">Personas</span></a>
-      </li>
-      <li id="liFilter" class="li--item li--item2">
-        <p class="p--filter"><i class='i--dashBoardIcon bx bx-filter-alt bx-md'></i><span
-            class="span--dashBoard--hidden">Filtrar</span></p>
-        <ul id="ulSumMenuFiltro" class="ul--subMenu--hidden">
-          <li class="li--subItem">
-            <p class="p--indicadorFilter">Documento <span>| Número</span> </p>
-            <div class="div--optionsContainer">
-              <select class="select--button" name="" id="">
-                <option value="cedula">Cédula</option>
-                <option value="ti">T.I</option>
-                <option value="ce">C.E</option>
-                <option value="pe">Pasaporte</option>
-              </select>
-              <input class="input--documento" type="text">
+    <header class="header--container" id="a">
+        <nav class="nav--container">
+            <div class="div--logo--close" id="div--logo">
+                <div id="divHamburger" href="#" class="div--menu-btn"></div>
+                <p class="p--logo--close" id="p--logo">LOGBOOK</p>
             </div>
-          </li>
-          <!--Estado-->
-          <li class="li--subItem">
-            <p class="p--indicadorFilter">Estado</p>
-            <div class="div--optionsContainer div--buttonsContainer">
-              <button class="button button--option">Todos</button>
-              <button class="button button--option">Activo</button>
-              <button class="button button--option">Inactivo</button>
-            </div>
-          </li>
-          <!--Rol-->
-          <li class="li--subItem">
-            <p class="p--indicadorFilter">Rol</p>
-            <div class="div--optionsContainer div--buttonsContainer">
-              <button class="button button--option">Todos</button>
-              <button class="button button--option">Admins</button>
-              <button class="button button--option">Instructores</button>
-              <button class="button button--option">Aprendices</button>
-            </div>
-          </li>
+            <ul class="ul--menu--close" id="ul--menu--1">
+
+                <li class="li--item--userImage"><img class="img--userImage" src="https://i.ibb.co/5FMhYSh/1.jpg"
+                        alt="User image" /> </li>
+                <li class="li--item--userName" id="li--item--userName">
+                    <p class="p--userName">Juan P
+                    <div id="div--row--up" class="div--row--up"></div>
+                    </p>
+
+                    <ul id="ul--menu--dropDown--hidden" class="ul--menu--dropDown--hidden">
+                        <li class="li--item--DropDown"><a class="a--item--DropDown a--item--1"
+                                href="./FormOpiniones.html"><i
+                                    class='i--DropDown bx bx-message-rounded-check'></i>Enviar opinión</a></li>
+                        <li class="li--item--DropDown"><a class="a--item--DropDown a--item--2" href="./index.html"> <i
+                                    class='i--DropDown i--DropDownCloseSesion bx bx-log-out-circle'></i>Cerrar
+                                sesión</a></li>
+                    </ul>
+                </li>
+
+                <li class="li--item--config li--itemSvg">
+                    <a class="a--svg a--svgConfig" href="./configPerfil.html"><i class='bx bxs-wrench'></i></a>
+                </li>
+                <li class="li--item--help li--itemSvg">
+                    <a class="a--svg a--svgHelp" href="./404.html"><i class='bx bxs-buoy'></i></a>
+                </li>
+                <li class="li--item--search li--itemSvg">
+                    <i class='i--search bx bx-search bx-mb'></i>
+                    <input class="input--seach " type="search" name="" id="">
+                </li>
+            </ul>
+        </nav>
+
+        <!--Menú vertical-->
+        <ul class="ul--menu2--close" id="ul--menu2--close">
+            <li class="li--item"><a href="dashboard.html" class="a--item"><i
+                        class='i--dashBoardIcon bx bxs-home bx-md'></i><span
+                        class="span--dashBoard--hidden">Home</span></a></li>
+            <li class="li--item"><a href="configPerfil.html" class="a--item"><i
+                        class='i--dashBoardIcon bx bx-id-card bx-md'></i><span
+                        class="span--dashBoard--hidden">Configuración</span></a></li>
+            <li class="li--item"><a href="resultadosBuscarUsuarios.html" class="a--item"><i
+                        class='i--dashBoardIcon bx bx-group bx-md'></i><span
+                        class="span--dashBoard--hidden">Personas</span></a></li>
+            <li id="liFilter" class="li--item li--item2">
+                <p class="p--filter"><i class='i--dashBoardIcon bx bx-filter-alt bx-md'></i><span
+                        class="span--dashBoard--hidden">Filtrar</span></p>
+                <ul id="ulSumMenuFiltro" class="ul--subMenu--hidden">
+                    <li class="li--subItem">
+                        <p class="p--indicadorFilter">Documento <span>| Número</span> </p>
+                        <div class="div--optionsContainer">
+                            <select class="select--button" name="" id="">
+                                <option value="cedula">Cédula</option>
+                                <option value="ti">T.I</option>
+                                <option value="ce">C.E</option>
+                                <option value="pe">Pasaporte</option>
+                            </select>
+                            <input class="input--documento" type="text">
+                        </div>
+                    </li>
+                    <!--Estado-->
+                    <li class="li--subItem">
+                        <p class="p--indicadorFilter">Estado</p>
+                        <div class="div--optionsContainer div--buttonsContainer">
+                            <button class="button button--option">Todos</button>
+                            <button class="button button--option">Activo</button>
+                            <button class="button button--option">Inactivo</button>
+                        </div>
+                    </li>
+                    <!--Rol-->
+                    <li class="li--subItem">
+                        <p class="p--indicadorFilter">Rol</p>
+                        <div class="div--optionsContainer div--buttonsContainer">
+                            <button class="button button--option">Todos</button>
+                            <button class="button button--option">Admins</button>
+                            <button class="button button--option">Instructores</button>
+                            <button class="button button--option">Aprendices</button>
+                        </div>
+                    </li>
+                </ul>
+                <!--ul--subMenú-->
+            </li>
+            <li class="li--item"><a href="./crearUsuario.html" class="a--item"><i
+                        class='i--dashBoardIcon bx bxs-user-plus bx-md'></i><span
+                        class="span--dashBoard--hidden">Agregar personas</span></a></li>
+            <li class="li--item"><a href="./404.html" class="a--item"><i
+                        class='i--dashBoardIcon bx bxs-message-rounded-x bx-md'></i><span
+                        class="span--dashBoard--hidden">Reporte error</span></a></li>
+            <li class="li--item"><a href="FormOpiniones.html" class="a--item"><i
+                        class='i--dashBoardIcon bx bx-message-alt-error bx-md'></i><span
+                        class="span--dashBoard--hidden">Reporte de opiniónes</span></a></li>
         </ul>
-        <!--ul--subMenú-->
-      </li>
-      <li class="li--item"><a href="crearUsuario.html" class="a--item"><i
-            class='i--dashBoardIcon bx bxs-user-plus bx-md'></i><span class="span--dashBoard--hidden">Agregar
-            personas</span></a></li>
-      <li class="li--item"><a href="" class="a--item"><i
-            class='i--dashBoardIcon bx bxs-message-rounded-x bx-md'></i><span class="span--dashBoard--hidden">Reporte
-            error</span></a></li>
-      <li class="li--item"><a href="FormOpiniones.html" class="a--item"><i
-            class='i--dashBoardIcon bx bx-message-alt-error bx-md'></i><span class="span--dashBoard--hidden">Reporte de
-            opiniónes</span></a></li>
-    </ul>
-    <!--ul--Menú 2-->
-  </header>
-  <main class="main--container">
-    <section class="section--container--close" id="section--container">
-      <div class="configuracionUsuario" id="IdconfiguracionUsuario">
-        <h2 class="texto--configuracion__perfil">Configuración de tu perfil.</h2>
-        <div class="formulario--contenedor__formulario">
-          <form action="#" id="#" class="formulario">
-            <div class="formulario--contenedor-uno">
-              <label for="primer--apellido">Primer apellido</label>
-              <input type="text" name="primer--apellido" disabled>
-              <label for="primer--nombre">Primer nombre</label>
-              <input type="text" name="primer--nombre" id="first--name" disabled>
-              <label for="rh">RH</label>
-              <input type="text" name="rh" id="grupo--sangre" disabled>
-              <div id="password" class="CambiarContrasena">
-                <i class='bx bxs-pencil'></i>
-                <div class="contrasena"></div>
-              </div>
-              </label>
-              <label for="correo-sena">Correo mi Sena</label>
-              <input type="email" name="correo-sena" id="correo-institucional" disabled>
+        <!--ul--Menú 2-->
+    </header>
+    <main class="main--container">
+        <section class="section--container--close" id="section--container">
+            <!--Aquí sus partes de agregar usuario y demás, comentario a petición de Daniel-->
+            <div class="configuracionUsuario" id="IdconfiguracionUsuario">
+              <h1 class="texto--configuracion__perfil">Configuración de tu perfil.</h1>
+              <section class="header--configperfil">
+                <div class="contenedor--nombre">
+                  <h2 class="nombre--perfil">Camila Alejandra Paredes osorio</h2>
+                </div>
+                <div class="perfil--contenedor__profesion">
+                  <div class="contenedor--profesion">
+                    <h2 class="profesion--perfil">Técnico en turismo</h2>
+                  </div>
+                  <div class="contenedor--correo">
+                    <h2 class="correo--perfil">caparedes32@misena.edu.co</h2>
+                  </div>
+                </div>
+                <div class="contenedorImg--perfil">
+                  <img class="imagen--perfil" src="https://i.ibb.co/Hq0mGGB/3.png" alt="Imagen de perfil">
+                </div>
+              </section>
+              <section class="contenedor--formulario">
+                <div class="contenedor--rol--estado">
+                  <div class="contenedor-aprendiz">
+                      <h2 class="titulo--rol">Rol</h2>
+                      <h2 class="rol">Aprendiz</h2>
+                  </div>
+                  <div class="contenedor--estado">
+                    <h2 class="titulo--estado">Estado</h2>
+                    <h2 class="estado">Activo</h2>
+                  </div>
+                </div>
+                <section class="contenedor--inputs__formulario">
+                  <form action="" class="contenedor--formulario">
+                      <div class="contenedor--nombres">
+                        <input required type="text" name="nombre" id="Fname" placeholder="Primer nombre">
+                        <input required type="text" name="nombre" id="sec--name" placeholder="Segundo nombre">
+                      </div>
+                      <div class="contenedor--apellidos">
+                        <input required type="text" name="nombre" id="Flast--name" placeholder="Primer apellido">
+                        <input required type="text" name="nombre" id="SLast--name" placeholder="Segundo apellido">
+                      </div>
+                      <div class="contenedor--password">
+                        <input required type="password" name="password--name" id="password--input" placeholder="Contraseña"><i class="fa fa-pencil-alt"></i>
+                        <a class="enlace--contraseña" href="#">¿Olvidaste tu contraseña</a>
+                      </div>
+                      <div class="contenedor--edad__rh">
+                        <input required type="text" name="name--age" id="id--age" placeholder="Edad">
+                        <input required type="text" name="name--rh" id="id--rh" placeholder="Rh">
+                      </div>
+                      <section class="contenedor--botones ">
+                        <div class="botones--component ">
+                          <input class="button--success" type="submit" value="Aceptar">
+                        </div>
+                        <div class="botones--component">
+                          <input class="button--danger" type="submit" value="Cancelar">
+                        </div>
+                      </section>
+                  </form>
+                </section>
+              </section>
+          </div>
+            
+            <section class="section--bienvenidaUsuario">
+                <h2>Bienvenido de vuelta Juan Perez</h2>
+                <p id="pBienvenida"> </p>
+            </section>
+
+        </section>
+    </main>
+
+    <footer class="footer--contenedor__principal">
+        <section class="footer--contenedor-logbook">
+            <a class="a--footer--titulo" href="#">LOGBOOK</a>
+        </section>
+        <section class="footer--contenedor__iconos">
+            <div class="footer-iconos">
+                <a href="./404.html"><span class="icon-facebook-with-circle"></span></a>
+                <a href="./404.html"><span class="icon-github-with-circle"></span></a>
+                <a href="./404.html"><span class="icon-instagram-with-circle"></span></a>
+                <a href="./404.html"><span class="icon-twitter-with-circle"></span></a>
             </div>
-            <div class="formulario--contenedor-dos">
-              <label for="segundo-apellido">Segundo apellido</label>
-              <input type="text" name="segundo-apellido" disabled>
-              <label for="segundo-nombre">Segundo nombre</label>
-              <input type="text" name="segundo-nombre" id="second-name" disabled>
-              <div class="contenedor--tipo__documento">
-                <select name="tipo-documento" id="document-type" disabled>
-                  <label for="tipo-documento">Tipo Documento</label>
-                  <option value="1">CC</option>
-                  <option value="2">TI</option>
-                  <option value="3">CE</option>
-                </select>
-                <input type="text" name="tipo--documento" id="document--type" disabled>
-              </div>
-              <label for="edad">Edad</label>
-              <input type="text" name="edad" id="age" disabled>
+        </section>
+        <section class="footer--contenedor__contactenos">
+            <div class="footer--contactenos__titulo">
+                <h2 class="h2--titulo">Contáctenos</h2>
             </div>
-          </form>
-          <section class="contenedor--foto__perfil">
-            <div class="contenedor--foto">
-              <img class="foto--perfil" src="https://i.ibb.co/VVQL4Mz/dX.jpg" alt="Imagen usuario">
+            <div class="footer-contactenos">
+                <a href="#"><span class="icon-slideshare"> Llámenos al 3144319820</span></a>
+                <a href="#"><span class="icon-mobile"> www.logbook.com</span></a>
+                <a href="#"><span class="icon-laptop"> Acerca de Logbook</span></a>
             </div>
-            <div class="contenedor--btn">
-              <button class="btn--cambiar-img" type="submit">Cambiar tu imagen de perfil</button>
-            </div>
-          </section>
-          <section class="contenedor--roles">
-            <div class="contenedor--rol-estado">
-              <label for="btn--rol">Tu rol en la institución</label>
-              <button class="btn-color-azul" type="submit" class="btn-rol">Aprendiz</button>
-              <label for="btn--estado">Tu estado en la institución</label>
-              <button class="btn-color-verde" type="submit" class="btn--estado">Activo</button>
-            </div>
-          </section>
-          <section class="contenedor--acciones">
-            <button class="color--transparente" type="submit">Guardar cambios</button>
-            <button class="color--transparent" type="submit">Cancelar</button>
-          </section>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer--contenedor__principal">
-    <section class="footer--contenedor-logbook">
-      <a class="a--footer--titulo" href="#">LOGBOOK</a>
-    </section>
-    <section class="footer--contenedor__iconos">
-      <div class="footer-iconos">
-        <a href="#"><span class="icon-facebook-with-circle"></span></a>
-        <a href="#"><span class="icon-github-with-circle"></span></a>
-        <a href="#"><span class="icon-instagram-with-circle"></span></a>
-        <a href="#"><span class="icon-twitter-with-circle"></span></a>
-      </div>
-    </section>
-    <section class="footer--contenedor__contactenos">
-      <div class="footer--contactenos__titulo">
-        <h2 class="h2--titulo">Contáctenos</h2>
-      </div>
-      <div class="footer-contactenos">
-        <a href="#"><span class="icon-slideshare"> Llámenos al 3144319820</span></a>
-        <a href="#"><span class="icon-mobile"> www.logbook.com</span></a>
-        <a href="#"><span class="icon-laptop"> Acerca de Logbook</span></a>
-      </div>
-    </section>
-  </footer>
-  <script src="javascripts/scriptMenu.js"></script>
-  <script src="javascripts/consejos.js"></script>
+        </section>
+    </footer>
+    <script src="javascripts/scriptMenu.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
