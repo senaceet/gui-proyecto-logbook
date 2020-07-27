@@ -25,6 +25,7 @@
 }
 
 .header--configperfil {
+  margin-top: 80px;
   position: relative;
   padding: 10px;
   display: flex;
@@ -33,7 +34,7 @@
   align-items: center;
   background: #685fde;
   width: 70%;
-  max-height: 140px;
+  max-height: 150px;
 }
 .header--configperfil .nombre--perfil {
   width: 100%;
@@ -75,8 +76,8 @@
   border: 6px solid #fff;
   margin-top: 10px;
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
 }
 
 .contenedor--formulario {
