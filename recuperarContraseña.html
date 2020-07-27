@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -9,9 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet' />
     <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="/stylesheets/recuperarContra.css">
     <link rel="stylesheet" href="stylesheets/normalize.css" />
     <link rel="stylesheet" href="stylesheets/styles.css" />
-    <link rel="stylesheet" href="stylesheets/main.css">
     <title>Logbook | ¡Bienvenido!</title>
 </head>
 
@@ -59,7 +58,7 @@
             <li class="li--item"><a href="dashboard.html" class="a--item"><i
                         class='i--dashBoardIcon bx bxs-home bx-md'></i><span
                         class="span--dashBoard--hidden">Home</span></a></li>
-            <li class="li--item"><a href="./detallesPerfil.html" class="a--item"><i
+            <li class="li--item"><a href="configPerfil.html" class="a--item"><i
                         class='i--dashBoardIcon bx bx-id-card bx-md'></i><span
                         class="span--dashBoard--hidden">Configuración</span></a></li>
             <li class="li--item"><a href="resultadosBuscarUsuarios.html" class="a--item"><i
@@ -106,7 +105,7 @@
             <li class="li--item"><a href="./crearUsuario.html" class="a--item"><i
                         class='i--dashBoardIcon bx bxs-user-plus bx-md'></i><span
                         class="span--dashBoard--hidden">Agregar personas</span></a></li>
-            <li class="li--item"><a href="./404.html" class="a--item"><i
+            <li class="li--item"><a href="./configPerfil.html" class="a--item"><i
                         class='i--dashBoardIcon bx bxs-message-rounded-x bx-md'></i><span
                         class="span--dashBoard--hidden">Reporte error</span></a></li>
             <li class="li--item"><a href="FormOpiniones.html" class="a--item"><i
@@ -118,65 +117,19 @@
     <main class="main--container">
         <section class="section--container--close" id="section--container">
             <!--Aquí sus partes de agregar usuario y demás, comentario a petición de Daniel-->
-            <div class="configuracionUsuario" id="IdconfiguracionUsuario">
-              <h1 class="texto--configuracion__perfil">Configuración de tu perfil.</h1>
-              <section class="header--configperfil">
-                <div class="contenedor--nombre">
-                  <h2 class="nombre--perfil">Camila Alejandra Paredes osorio</h2>
+            <div class="--containerCorreoRecuperacion">
+                <h1>LOGBOOK</h1>
+                <p>Por favor ingresa tu correo para enviarte un link de recuperación</p>
+                <input type="email" name="correo" id="correo" placeholder="Correo Electronico">
+                <div class="--botonesConfirmacion">
+                    <input type="button" class="Cancelar" value="Cancelar">
+                    <input type="button" class="Enviar" value="Enviar">
                 </div>
-                <div class="perfil--contenedor__profesion">
-                  <div class="contenedor--profesion">
-                    <h2 class="profesion--perfil">Técnico en turismo</h2>
-                  </div>
-                  <div class="contenedor--correo">
-                    <h2 class="correo--perfil">caparedes32@misena.edu.co</h2>
-                  </div>
-                </div>
-                <div class="contenedorImg--perfil">
-                  <img class="imagen--perfil" src="https://i.ibb.co/Hq0mGGB/3.png" alt="Imagen de perfil">
-                </div>
-              </section>
-              <section class="contenedor--formulario">
-                <div class="contenedor--rol--estado">
-                  <div class="contenedor-aprendiz">
-                      <h2 class="titulo--rol">Rol</h2>
-                      <h2 class="rol">Aprendiz</h2>
-                  </div>
-                  <div class="contenedor--estado">
-                    <h2 class="titulo--estado">Estado</h2>
-                    <h2 class="estado">Activo</h2>
-                  </div>
-                </div>
-                <section class="contenedor--inputs__formulario">
-                  <form action="" class="contenedor--formulario">
-                      <div class="contenedor--nombres">
-                        <input required type="text" name="nombre" id="Fname" placeholder="Primer nombre">
-                        <input required type="text" name="nombre" id="sec--name" placeholder="Segundo nombre">
-                      </div>
-                      <div class="contenedor--apellidos">
-                        <input required type="text" name="nombre" id="Flast--name" placeholder="Primer apellido">
-                        <input required type="text" name="nombre" id="SLast--name" placeholder="Segundo apellido">
-                      </div>
-                      <div class="contenedor--password">
-                        <input required type="password" name="password--name" id="password--input" placeholder="Contraseña"><i class="fa fa-pencil-alt"></i>
-                        <a class="enlace--contraseña" href="#">¿Olvidaste tu contraseña</a>
-                      </div>
-                      <div class="contenedor--edad__rh">
-                        <input required type="text" name="name--age" id="id--age" placeholder="Edad">
-                        <input required type="text" name="name--rh" id="id--rh" placeholder="Rh">
-                      </div>
-                      <section class="contenedor--botones ">
-                        <div class="botones--component ">
-                          <input class="button--success" type="submit" value="Aceptar">
-                        </div>
-                        <div class="botones--component">
-                          <input class="button--danger" type="submit" value="Cancelar">
-                        </div>
-                      </section>
-                  </form>
-                </section>
-              </section>
-          </div>
+            </div>
+            <section class="section--bienvenidaUsuario">
+                
+            </section>
+
         </section>
     </main>
 
@@ -203,39 +156,8 @@
             </div>
         </section>
     </footer>
-    <script src="https://kit.fontawesome.com/e4acb4060a.js" crossorigin="anonymous"></script>
     <script src="javascripts/scriptMenu.js"></script>
+    <!-- <script src="javascripts/consejos.js"></script> -->
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
