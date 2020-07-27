@@ -7,9 +7,10 @@
     <link rel="shortcut icon" href="https://i.ibb.co/kmctXQm/libro.png" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet' />
+    <script src="https://kit.fontawesome.com/effae3290d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="fonts/fonts.css" />
     <link rel="stylesheet" href="stylesheets/normalize.css" />
-    <link rel="stylesheet" href="stylesheets/styles.css" />
+    <link rel="stylesheet" href="stylesheets/Davincho.css" />
     <title>Logbook | ¡Bienvenido!</title>
 </head>
 
@@ -25,25 +26,26 @@
                 <li class="li--item--userImage"><img class="img--userImage" src="https://i.ibb.co/5FMhYSh/1.jpg"
                         alt="User image" /> </li>
                 <li class="li--item--userName" id="li--item--userName">
-                    <p class="p--userName">Juan P
+                    <p class="p--userName">
                     <div id="div--row--up" class="div--row--up"></div>
                     </p>
 
                     <ul id="ul--menu--dropDown--hidden" class="ul--menu--dropDown--hidden">
                         <li class="li--item--DropDown"><a class="a--item--DropDown a--item--1"
-                                href="./FormOpiniones.html"><i
-                                    class='i--DropDown bx bx-message-rounded-check'></i>Enviar opinión</a></li>
-                        <li class="li--item--DropDown"><a class="a--item--DropDown a--item--2" href="./index.html"> <i
+                                href="FormOpiniones.html"><i class='i--DropDown bx bx-message-rounded-check'></i>Enviar
+                                opinión</a></li>
+                        <li class="li--item--DropDown"><a class="a--item--DropDown a--item--2"
+                                href="resultadosBuscarUsuarios.html"> <i
                                     class='i--DropDown i--DropDownCloseSesion bx bx-log-out-circle'></i>Cerrar
                                 sesión</a></li>
                     </ul>
                 </li>
 
                 <li class="li--item--config li--itemSvg">
-                    <a class="a--svg a--svgConfig" href="./configPerfil.html"><i class='bx bxs-wrench'></i></a>
+                    <a class="a--svg a--svgConfig" href=""><i class='bx bxs-wrench'></i></a>
                 </li>
                 <li class="li--item--help li--itemSvg">
-                    <a class="a--svg a--svgHelp" href="./404.html"><i class='bx bxs-buoy'></i></a>
+                    <a class="a--svg a--svgHelp" href=""><i class='bx bxs-buoy'></i></a>
                 </li>
                 <li class="li--item--search li--itemSvg">
                     <i class='i--search bx bx-search bx-mb'></i>
@@ -54,13 +56,13 @@
 
         <!--Menú vertical-->
         <ul class="ul--menu2--close" id="ul--menu2--close">
-            <li class="li--item"><a href="dashboard.html" class="a--item"><i
+            <li class="li--item"><a href="./dashboard.html" class="a--item"><i
                         class='i--dashBoardIcon bx bxs-home bx-md'></i><span
                         class="span--dashBoard--hidden">Home</span></a></li>
-            <li class="li--item"><a href="./detallesPerfil.html" class="a--item"><i
+            <li class="li--item"><a href="./configPerfil.html" class="a--item"><i
                         class='i--dashBoardIcon bx bx-id-card bx-md'></i><span
                         class="span--dashBoard--hidden">Configuración</span></a></li>
-            <li class="li--item"><a href="resultadosBuscarUsuarios.html" class="a--item"><i
+            <li class="li--item"><a href="./resultadosBuscarUsuarios.html" class="a--item"><i
                         class='i--dashBoardIcon bx bx-group bx-md'></i><span
                         class="span--dashBoard--hidden">Personas</span></a></li>
             <li id="liFilter" class="li--item li--item2">
@@ -101,10 +103,10 @@
                 </ul>
                 <!--ul--subMenú-->
             </li>
-            <li class="li--item"><a href="./crearUsuario.html" class="a--item"><i
+            <li class="li--item"><a href="crearUsuario.html" class="a--item"><i
                         class='i--dashBoardIcon bx bxs-user-plus bx-md'></i><span
                         class="span--dashBoard--hidden">Agregar personas</span></a></li>
-            <li class="li--item"><a href="./configPerfil.html" class="a--item"><i
+            <li class="li--item"><a href="" class="a--item"><i
                         class='i--dashBoardIcon bx bxs-message-rounded-x bx-md'></i><span
                         class="span--dashBoard--hidden">Reporte error</span></a></li>
             <li class="li--item"><a href="FormOpiniones.html" class="a--item"><i
@@ -113,13 +115,117 @@
         </ul>
         <!--ul--Menú 2-->
     </header>
-    <main class="main--container">
-        <section class="section--container--close" id="section--container">
-            <!--Aquí sus partes de agregar usuario y demás, comentario a petición de Daniel-->
-            <section class="section--bienvenidaUsuario">
-                <h2>Bienvenido de vuelta Juan Perez</h2>
-                <p id="pBienvenida"> </p>
-            </section>
+    <main class="main--container-dave">
+        <section class="section--container--close-dx" id="section--container">
+
+            <div class="container-welcome">
+                <p>
+                    Bienvenido a la dashboard
+                </p>
+                <p>Este proyecto es genial</p>
+            </div>
+            <div class="grid-item1">
+                <p class="item-howdouse">
+                    ¿Como usar el aplicativo?
+                </p>
+                <i class="fas fa-language"></i>
+            </div>
+            <div class="grid-item2">
+                <div class="item-header">
+                    <i class="far fa-user"></i>
+                    <h2 class="item2-title">
+                        Programas más demandados
+                    </h2>
+                </div>
+                <div class="container-circle-program">
+                    <i class="fas fa-circle-notch"></i>
+                    <div class="container-programs">
+                        <div class="item-program">
+                            <i class="fas fa-plane"></i>
+                            <div class="item-tecnicos">
+                                <h3>Técnico en</h3>
+                                <p>Turismo</p>
+                            </div>
+                        </div>
+                        <div class="item-program">
+                            <i class="fas fa-plane"></i>
+                            <div class="item-tecnicos">
+                                <h3>Técnico en</h3>
+                                <p>Turismo</p>
+                            </div>
+                        </div>
+                        <div class="item-program">
+                            <i class="fas fa-plane"></i>
+                            <div class="item-tecnicos">
+                                <h3>Técnico en</h3>
+                                <p>Turismo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item3">
+                <div class="grid-text-item">
+                    <h2 class="item-users">
+                        Usuarios
+                    </h2>
+                    <p>
+                        5002
+                    </p>
+                </div class="grid-text-item">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="grid-item4">
+                <div class="item-header4">
+                    <i class="far fa-user"></i>
+                    <h2 class="item2-title">
+                        Usuarios registrados recientemente
+                    </h2>
+                </div>
+                <div class="container-userxd">
+                    <div class="user-content">
+                        <i class="fas fa-user-circle"></i>
+                        <div class="item-user-date">
+                            <p>Juan galindo</p>
+                            <p>dsanchez25@misena.edu.co</p>
+                        </div>
+                        <p class="item-day">Ayer</p>
+                    </div>
+                    <div class="user-content">
+                        <i class="fas fa-user-circle"></i>
+                        <div class="item-user-date">
+                            <p>Juan galindo</p>
+                            <p>dsanchez25@misena.edu.co</p>
+                        </div>
+                        <p class="item-day">Ayer</p>
+                    </div>
+                    <div class="user-content">
+                        <i class="fas fa-user-circle"></i>
+                        <div class="item-user-date">
+                            <p>Juan galindo</p>
+                            <p>dsanchez25@misena.edu.co</p>
+                        </div>
+                        <p class="item-day">Ayer</p>
+                    </div>
+                    <div class="user-content">
+                        <i class="fas fa-user-circle"></i>
+                        <div class="item-user-date">
+                            <p>Juan galindo</p>
+                            <p>dsanchez25@misena.edu.co</p>
+                        </div>
+                        <p class="item-day">Ayer</p>
+                    </div>
+                    <div class="user-content">
+                        <i class="fas fa-user-circle"></i>
+                        <div class="item-user-date">
+                            <p>Juan galindo</p>
+                            <p>dsanchez25@misena.edu.co</p>
+                        </div>
+                        <p class="item-day">Ayer</p>
+                    </div>
+
+                </div>
+            </div>
 
         </section>
     </main>
@@ -130,10 +236,10 @@
         </section>
         <section class="footer--contenedor__iconos">
             <div class="footer-iconos">
-                <a href="./404.html"><span class="icon-facebook-with-circle"></span></a>
-                <a href="./404.html"><span class="icon-github-with-circle"></span></a>
-                <a href="./404.html"><span class="icon-instagram-with-circle"></span></a>
-                <a href="./404.html"><span class="icon-twitter-with-circle"></span></a>
+                <a href="#"><span class="icon-facebook-with-circle"></span></a>
+                <a href="#"><span class="icon-github-with-circle"></span></a>
+                <a href="#"><span class="icon-instagram-with-circle"></span></a>
+                <a href="#"><span class="icon-twitter-with-circle"></span></a>
             </div>
         </section>
         <section class="footer--contenedor__contactenos">
