@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family:'Source','Sans','Pro',sans-serif;
+}
+body{
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.--divPadre{
+    text-align: center;
+    width: 500px;
+    height: 400px;
+}
+h1{
+    letter-spacing: 5px;
+    font-size: 30px;
+    color: #43425D;
+    text-align: center;
+    margin-bottom: 30px;
+}
+p{
+    width: 100%;
+    font-size: 17px;
+    color: rgba( 0, 0, 0, 0.5);
+    text-align: center;
+    margin-bottom: 30px;
+}
+input{
+    width: 100%;
+    height: 4vh;
+    font-size: 17px;
+    border-bottom: #222222 1px solid;
+    outline: none;
+}
+input:focus{
+    border-bottom: 1px solid #685FDE;
+    
+}
+.ContenedorcontraActual{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 2%;
+}
+
+.ContenedorRepetirContra{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 2%;
+}
+.ContenedorNuevaContra{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 2%;
+}
+.--botones{
+    height: 100px;
+    width: 100%;
+    display: inline-flex;
+    padding: 5%;
+    outline: 0px;
+    text-decoration: none;
+}
+.button--cancelar{
+    border:#DC3545 1px solid;
+    color: #DC3545;
+    margin-right: 15px;
+}
+.button--cancelar:hover{
+    background: #DC3545;
+    color: #ffffff;
+}
+.button--continuar{
+    background: #28A745;
+    color: #ffffff;
+    text-decoration: none;
+    border: #ffffff 1px solid;
+}
+.button--continuar:hover{
+    background: #ffffff;
+    color: #28A745;
+    border: #28A745 1px solid;
+}
