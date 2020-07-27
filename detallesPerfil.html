@@ -1,38 +1,191 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalles Perfil</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://i.ibb.co/kmctXQm/libro.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="stylesheets/normalize.css" />
+    <link rel="stylesheet" href="stylesheets/styles.css" />
+    <link rel="stylesheet" href="stylesheets/main.css">
     <link rel="stylesheet" href="stylesheets/detallesPerfil.css">
+    <title>Logbook | ¡Bienvenido!</title>
 </head>
+
 <body>
-    <div class="contenedorPadre">
-        <div class="contenedorNombreperfil">
-            <img src="https://i.ibb.co/Ks8PkHw/Foto.jpg" alt="Foto" border="0">
-            <h2>Camila Alejandra Paredes Osorio</h2>
-        </div>
-        <div class="contenedorInfoPerfil">
-            <div class="TecnicoTurismo">
-                <p class="TecnicoTurismo">Técnico en Turismo</p>
+    <header class="header--container" id="a">
+        <nav class="nav--container">
+            <div class="div--logo--close" id="div--logo">
+                <div id="divHamburger" href="#" class="div--menu-btn"></div>
+                <p class="p--logo--close" id="p--logo">LOGBOOK</p>
             </div>
-            <div class="correo">
-                <p class="correo">caparedes32@misena.edu.co</p>
+            <ul class="ul--menu--close" id="ul--menu--1">
+
+                <li class="li--item--userImage"><img class="img--userImage" src="https://i.ibb.co/5FMhYSh/1.jpg"
+                        alt="User image" /> </li>
+                <li class="li--item--userName" id="li--item--userName">
+                    <p class="p--userName">Juan P
+                    <div id="div--row--up" class="div--row--up"></div>
+                    </p>
+
+                    <ul id="ul--menu--dropDown--hidden" class="ul--menu--dropDown--hidden">
+                        <li class="li--item--DropDown"><a class="a--item--DropDown a--item--1"
+                                href="./FormOpiniones.html"><i
+                                    class='i--DropDown bx bx-message-rounded-check'></i>Enviar opinión</a></li>
+                        <li class="li--item--DropDown"><a class="a--item--DropDown a--item--2" href="./index.html"> <i
+                                    class='i--DropDown i--DropDownCloseSesion bx bx-log-out-circle'></i>Cerrar
+                                sesión</a></li>
+                    </ul>
+                </li>
+
+                <li class="li--item--config li--itemSvg">
+                    <a class="a--svg a--svgConfig" href="./configPerfil.html"><i class='bx bxs-wrench'></i></a>
+                </li>
+                <li class="li--item--help li--itemSvg">
+                    <a class="a--svg a--svgHelp" href="./404.html"><i class='bx bxs-buoy'></i></a>
+                </li>
+                <li class="li--item--search li--itemSvg">
+                    <i class='i--search bx bx-search bx-mb'></i>
+                    <input class="input--seach " type="search" name="" id="">
+                </li>
+            </ul>
+        </nav>
+
+        <!--Menú vertical-->
+        <ul class="ul--menu2--close" id="ul--menu2--close">
+            <li class="li--item"><a href="dashboard.html" class="a--item"><i
+                        class='i--dashBoardIcon bx bxs-home bx-md'></i><span
+                        class="span--dashBoard--hidden">Home</span></a></li>
+            <li class="li--item"><a href="./detallesPerfil.html" class="a--item"><i
+                        class='i--dashBoardIcon bx bx-id-card bx-md'></i><span
+                        class="span--dashBoard--hidden">Configuración</span></a></li>
+            <li class="li--item"><a href="resultadosBuscarUsuarios.html" class="a--item"><i
+                        class='i--dashBoardIcon bx bx-group bx-md'></i><span
+                        class="span--dashBoard--hidden">Personas</span></a></li>
+            <li id="liFilter" class="li--item li--item2">
+                <p class="p--filter"><i class='i--dashBoardIcon bx bx-filter-alt bx-md'></i><span
+                        class="span--dashBoard--hidden">Filtrar</span></p>
+                <ul id="ulSumMenuFiltro" class="ul--subMenu--hidden">
+                    <li class="li--subItem">
+                        <p class="p--indicadorFilter">Documento <span>| Número</span> </p>
+                        <div class="div--optionsContainer">
+                            <select class="select--button" name="" id="">
+                                <option value="cedula">Cédula</option>
+                                <option value="ti">T.I</option>
+                                <option value="ce">C.E</option>
+                                <option value="pe">Pasaporte</option>
+                            </select>
+                            <input class="input--documento" type="text">
+                        </div>
+                    </li>
+                    <!--Estado-->
+                    <li class="li--subItem">
+                        <p class="p--indicadorFilter">Estado</p>
+                        <div class="div--optionsContainer div--buttonsContainer">
+                            <button class="button button--option">Todos</button>
+                            <button class="button button--option">Activo</button>
+                            <button class="button button--option">Inactivo</button>
+                        </div>
+                    </li>
+                    <!--Rol-->
+                    <li class="li--subItem">
+                        <p class="p--indicadorFilter">Rol</p>
+                        <div class="div--optionsContainer div--buttonsContainer">
+                            <button class="button button--option">Todos</button>
+                            <button class="button button--option">Admins</button>
+                            <button class="button button--option">Instructores</button>
+                            <button class="button button--option">Aprendices</button>
+                        </div>
+                    </li>
+                </ul>
+                <!--ul--subMenú-->
+            </li>
+            <li class="li--item"><a href="./crearUsuario.html" class="a--item"><i
+                        class='i--dashBoardIcon bx bxs-user-plus bx-md'></i><span
+                        class="span--dashBoard--hidden">Agregar personas</span></a></li>
+            <li class="li--item"><a href="./404.html" class="a--item"><i
+                        class='i--dashBoardIcon bx bxs-message-rounded-x bx-md'></i><span
+                        class="span--dashBoard--hidden">Reporte error</span></a></li>
+            <li class="li--item"><a href="FormOpiniones.html" class="a--item"><i
+                        class='i--dashBoardIcon bx bx-message-alt-error bx-md'></i><span
+                        class="span--dashBoard--hidden">Reporte de opiniónes</span></a></li>
+        </ul>
+        <!--ul--Menú 2-->
+    </header>
+    <main class="main--container">
+        <section class="section--container--close" id="section--container">
+            <!--Aquí sus partes de agregar usuario y demás, comentario a petición de Daniel-->
+            <div class="configuracionUsuario" id="IdconfiguracionUsuario">
+              <h1 class="texto--configuracion__perfil">Configuración de tu perfil.</h1>
+              <section class="header--configperfil">
+                <div class="contenedor--nombre">
+                  <h2 class="nombre--perfil">Camila Alejandra Paredes osorio</h2>
+                </div>
+                <div class="perfil--contenedor__profesion">
+                  <div class="contenedor--profesion">
+                    <h2 class="profesion--perfil">Técnico en turismo</h2>
+                  </div>
+                  <div class="contenedor--correo">
+                    <h2 class="correo--perfil">caparedes32@misena.edu.co</h2>
+                  </div>
+                </div>
+                <div class="contenedorImg--perfil">
+                  <img class="imagen--perfil" src="https://i.ibb.co/Hq0mGGB/3.png" alt="Imagen de perfil">
+                </div>
+              </section>
+              <section class="contenedor--formulario">
+                <div class="contenedor--rol--estado">
+                  <div class="contenedor-aprendiz">
+                      <h2 class="titulo--rol">Rol</h2>
+                      <h2 class="rol">Aprendiz</h2>
+                  </div>
+                  <div class="contenedor--estado">
+                    <h2 class="titulo--estado">Estado</h2>
+                    <h2 class="estado">Activo</h2>
+                  </div>
+                  <div class="contenedor--edad">
+                    <h2 class="titulo--edad">Edad</h2>
+                    <h2 class="edad">25</h2>
+                  </div>
+                </div>
+                <section class="contenedor--inputs__formulario">
+                    <div class="contenedor--boton">
+                        <input class="button--aceptar" type="submit" value="Aceptar">
+                    </div>
+                </section>
+              </section>
+          </div>
+        </section>
+    </main>
+
+    <footer class="footer--contenedor__principal">
+        <section class="footer--contenedor-logbook">
+            <a class="a--footer--titulo" href="#">LOGBOOK</a>
+        </section>
+        <section class="footer--contenedor__iconos">
+            <div class="footer-iconos">
+                <a href="./404.html"><span class="icon-facebook-with-circle"></span></a>
+                <a href="./404.html"><span class="icon-github-with-circle"></span></a>
+                <a href="./404.html"><span class="icon-instagram-with-circle"></span></a>
+                <a href="./404.html"><span class="icon-twitter-with-circle"></span></a>
             </div>
-            <div class="Rol">
-                <h3 class="Rol">Rol</h3>
-                <p class="Aprendiz">Aprendiz</p>
+        </section>
+        <section class="footer--contenedor__contactenos">
+            <div class="footer--contactenos__titulo">
+                <h2 class="h2--titulo">Contáctenos</h2>
             </div>
-            <div class="edad">
-                <h3 class="Edad">Edad</h3>
-                <p class="EdadNumero">25</p>
+            <div class="footer-contactenos">
+                <a href="#"><span class="icon-slideshare"> Llámenos al 3144319820</span></a>
+                <a href="#"><span class="icon-mobile"> www.logbook.com</span></a>
+                <a href="#"><span class="icon-laptop"> Acerca de Logbook</span></a>
             </div>
-            <div class="estado">
-                <h3 class="Estado">Estado</h3>
-                <p class="Activo">Activo</p>
-            </div>
-        </div>
-        <input type="button" value="Aceptar">
-    </div>
+        </section>
+    </footer>
+    <script src="https://kit.fontawesome.com/e4acb4060a.js" crossorigin="anonymous"></script>
+    <script src="javascripts/scriptMenu.js"></script>
 </body>
 </html>

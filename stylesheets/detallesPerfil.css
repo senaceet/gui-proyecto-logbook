@@ -1,60 +1,67 @@
-*{
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-    font-family:'Source','Sans','Pro',sans-serif;
+.section--container--close {
+    padding: 20px;
+    margin-left: 5%;
+    background-color: #f2f2f2;
+    height: 100vh;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px repeat(3, 150px) 50px;
+    /*align-items: center;*/
+    column-gap: 1em;
+    row-gap: 1em;
+    overflow: auto;
 }
-body{
-    background: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 100%;
-    align-self: center;
+.contenedor-aprendiz,
+.contenedor--estado,
+.contenedor--edad{
+    margin-top: 60px;
 }
 
-.contenedorNombreperfil{
-    display: flex;
-    justify-content: center;
-    background: #685FDE;
-    color: #ffffff;
-    width: 95%;
-    height: 184px;
-    align-items: center;
+.contenedor--boton{
+    margin-top: 100px;
+    display: inline-block;
 }
-.contenedorInfoPerfil{
-    display: flex;
-    flex-wrap:wrap;
-    align-content: space-between;
-    color: #000000;
-    width: 50%;
-    height: 184px;
-    margin-top: 10px;
-    margin-left: 500px;
-    font-size: 19px;
-}
-.TecnicoTurismo{
-    background: salmon;
-    margin-right: 30px;
-    height: 50px;
-    width: 40%;
-}
-img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-input{
-    width: 95%;
-    height: 50px;
-    background: #ffffff;
-    border: #28A745 1px solid;
-    color: #28A745;
+.button--aceptar{
+    display: block;
+    padding: 10px 300px;
+    border: 1px solid #25d366;
     outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #25d366;
+    color: #fff;
+    border: 1px solid #000;
+
 }
-input:hover{
-    color: #ffffff;
-    background: #28A745;
+
+.contenedor--formulario {
+    width: 70%;
+    height: 60%;
+    padding: 10px;
+    background: #fff;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
 }
+
+.header--configperfil {
+    margin-top: 80px;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    background: #685fde;
+    width: 70%;
+    max-height: 150px;
+    border: 1px solid #000;
+
+  }
+  
+
+
+  
+
+  
